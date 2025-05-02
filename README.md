@@ -12,29 +12,29 @@ Este repositório foi criado como parte do desafio prático da plataforma DIO, c
 
 ---
 
-## ☁️ Benefícios da Computação em Nuvem
+### ☁️ Benefícios da Computação em Nuvem
 
-### 🔄 Escalabilidade
+## 🔄 Escalabilidade
 Permite aumentar a capacidade computacional conforme a demanda do seu negócio cresce, sem a necessidade de investimentos físicos adicionais.
 
-### 📈 Elasticidade
+## 📈 Elasticidade
 Permite ajustar automaticamente os recursos da aplicação.  
 Exemplo: configurar para que, se a CPU atingir 75% da capacidade, um novo servidor seja adicionado automaticamente. Se a carga diminuir, o recurso extra é desativado.
 
-### ✅ Confiabilidade
+## ✅ Confiabilidade
 Os serviços podem ser distribuídos globalmente e configurados com tolerância a falhas, garantindo resiliência e continuidade em caso de falhas regionais.
 
-### 📊 Previsibilidade
+## 📊 Previsibilidade
 Comportamento estável em termos de desempenho e custos. A previsibilidade orçamentária é um dos principais atrativos da nuvem.
 
-### 🔐 Segurança
+## 🔐 Segurança
 A plataforma de nuvem oferece ferramentas de segurança, mas a **responsabilidade pela implementação correta é do cliente**. Isso inclui criptografia, controle de acesso, firewall, etc.
 
-### 🛡️ Governança
+## 🛡️ Governança
 Gerenciamento de recursos baseado em políticas de negócios.  
 Exemplo: restringir o acesso a serviços em determinadas regiões por questões legais ou operacionais.
 
-### ⚙️ Gerenciabilidade
+## ⚙️ Gerenciabilidade
 Recursos podem ser gerenciados de diversas formas:
 - Portal do Azure (interface gráfica)
 - Azure CLI
@@ -48,7 +48,7 @@ Essa flexibilidade permite automatizar e escalar operações com facilidade.
 
 ## ⏱️ Disponibilidade e SLA (Service Level Agreement)
 
-### O que é SLA?
+# O que é SLA?
 É um acordo que define o nível de disponibilidade garantido pelo provedor de nuvem. Ele determina o tempo máximo que um serviço pode ficar indisponível dentro de um período.
 
 | SLA (%)     | Tempo máximo de inatividade (por semana) |
@@ -63,7 +63,7 @@ Essa flexibilidade permite automatizar e escalar operações com facilidade.
 
 ---
 
-## 💡 Dicas Práticas
+# 💡 Dicas Práticas
 
 - Comece com o Portal do Azure para se familiarizar com os recursos.
 - Em projetos maiores, prefira automações com CLI, PowerShell ou Bicep.
@@ -73,8 +73,42 @@ Essa flexibilidade permite automatizar e escalar operações com facilidade.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 - Microsoft Azure
 - Azure CLI / PowerShell
 - Portal do Azure
+
+---
+
+## 🧱 Como Criar uma Máquina Virtual Windows no Portal do Azure
+
+1. **Acesse o Portal do Azure**: [https://portal.azure.com](https://portal.azure.com)
+
+2. **Pesquise por "Máquinas Virtuais"** no menu de busca e clique em **"Criar" > "Máquina virtual"**.
+
+3. **Preencha as Informações Básicas**:
+   - Assinatura e grupo de recursos
+   - Nome da VM
+   - Região (ex: Brazil South)
+   - Imagem: escolha "Windows 11" ou "Windows Server"
+   - Tipo de autenticação: senha ou chave SSH
+
+4. **Tamanho da VM**:
+   - Selecione a configuração de hardware (CPU/RAM) ideal ou use a sugerida.
+
+5. **Configuração de Disco**:
+   - Use o disco padrão (geralmente SSD) ou escolha outro tipo.
+
+6. **Rede**:
+   - Deixe a configuração padrão (com IP público e porta RDP aberta) para facilitar o acesso remoto.
+
+7. **Revisar + Criar**:
+   - Revise todas as configurações e clique em **"Criar"**.
+
+8. **Aguarde a Implantação** e depois clique em **"Ir para o recurso"** para visualizar e gerenciar sua VM.
+
+9. **Conexão via RDP**:
+   - Clique em **"Conectar" > "RDP"**, baixe o arquivo `.rdp`, abra-o e entre com as credenciais definidas.
+
+📌 Fonte oficial: [Documentação Microsoft Azure](https://learn.microsoft.com/pt-br/azure/virtual-machines/windows/quick-create-portal)
